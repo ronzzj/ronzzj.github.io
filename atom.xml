@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Tibet</title>
+  <title>CODER</title>
   
   <subtitle>ronzzj</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://ronzzj.github.io/blog/"/>
+  <link href="https://ronzzj.github.io/"/>
   <updated>2019-07-06T04:14:12.305Z</updated>
-  <id>https://ronzzj.github.io/blog/</id>
+  <id>https://ronzzj.github.io/</id>
   
   <author>
     <name>ron</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>git命令使用</title>
-    <link href="https://ronzzj.github.io/blog/2019/07/06/git/"/>
-    <id>https://ronzzj.github.io/blog/2019/07/06/git/</id>
+    <link href="https://ronzzj.github.io/2019/07/06/git/"/>
+    <id>https://ronzzj.github.io/2019/07/06/git/</id>
     <published>2019-07-06T04:09:40.000Z</published>
     <updated>2019-07-06T04:14:12.305Z</updated>
     
@@ -39,10 +39,10 @@
     </summary>
     
     
-      <category term="git" scheme="https://ronzzj.github.io/blog/categories/git/"/>
+      <category term="git" scheme="https://ronzzj.github.io/categories/git/"/>
     
     
-      <category term="git" scheme="https://ronzzj.github.io/blog/tags/git/"/>
+      <category term="git" scheme="https://ronzzj.github.io/tags/git/"/>
     
   </entry>
   
