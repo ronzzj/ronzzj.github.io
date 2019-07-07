@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ronzzj.github.io/"/>
-  <updated>2019-07-06T04:14:12.305Z</updated>
+  <updated>2019-07-07T14:20:52.610Z</updated>
   <id>https://ronzzj.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git速学</title>
+    <link href="https://ronzzj.github.io/2019/07/07/git%E9%80%9F%E5%AD%A6/"/>
+    <id>https://ronzzj.github.io/2019/07/07/git速学/</id>
+    <published>2019-07-07T14:18:51.000Z</published>
+    <updated>2019-07-07T14:20:52.610Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git基本命令"><a href="#git基本命令" class="headerlink" title="git基本命令"></a>git基本命令</h2><ul><li><p>初始化仓库  </p><ol><li><p>初始当前文件夹  </p><p><code>git init</code>   </p></li><li><p>指定文件夹初始化 </p><p><code>git  init FolderName</code></p></li></ol></li><li><p>添加新文件  </p><ol><li><p>添加全部文件</p><p><code>git add .</code></p></li><li><p>添加指定文件</p><p><code>git add FileName</code></p></li></ol></li><li><p>提交版本</p><ol><li><p>提交到仓库</p><p><code>git commit -m &quot;注释信息&quot;</code> </p></li><li><p>同时添加和add</p><p><code>git commit -a -m &quot;注释信息&quot;</code></p></li></ol></li><li><p>发布版本</p><ol><li><p>克隆并发布</p><p><code>git clone ssh: example.url.git</code></p></li><li><p>发布版本</p><p><code>git push ssh: example.url.git</code></p></li></ol></li><li><p>删除文件</p><p><code>git rm file</code></p></li><li><p>创建分支</p><p><code>git branch test</code></p></li><li><p>切换分支</p><p><code>git checkout test</code></p></li><li><p>删除分支</p><p><code>git branch -d test</code></p></li><li><p>合并分支</p><p><code>git merge test</code></p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;git基本命令&quot;&gt;&lt;a href=&quot;#git基本命令&quot; class=&quot;headerlink&quot; title=&quot;git基本命令&quot;&gt;&lt;/a&gt;git基本命令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;初始化仓库  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;初始当前文件夹  &lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://ronzzj.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://ronzzj.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>git命令使用</title>

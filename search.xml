@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git速学]]></title>
+    <url>%2F2019%2F07%2F07%2Fgit%E9%80%9F%E5%AD%A6%2F</url>
+    <content type="text"><![CDATA[git基本命令 初始化仓库 初始当前文件夹 git init 指定文件夹初始化 git init FolderName 添加新文件 添加全部文件 git add . 添加指定文件 git add FileName 提交版本 提交到仓库 git commit -m &quot;注释信息&quot; 同时添加和add git commit -a -m &quot;注释信息&quot; 发布版本 克隆并发布 git clone ssh: example.url.git 发布版本 git push ssh: example.url.git 删除文件 git rm file 创建分支 git branch test 切换分支 git checkout test 删除分支 git branch -d test 合并分支 git merge test]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git命令使用]]></title>
     <url>%2F2019%2F07%2F06%2Fgit%2F</url>
     <content type="text"><![CDATA[git init git add . git commit -m “项目描述” git remote add origin https://github.com/ronzzj/-BirckBracker.git git push origin master]]></content>
