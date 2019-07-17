@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[threejs]]></title>
+    <url>%2F2019%2F07%2F17%2Fthreejs%2F</url>
+    <content type="text"><![CDATA[Three.js 第一篇:cowboy_hat_face:Three.js:partly_sunny: Three.js 是基于WebGL开发的。 Three.js 是基于web端的3d游戏引擎 Three 是指 3D(三维) Js是指JavaScript Three.js目录结构:calendar: Build目录 包含两个文件，three.js 和three.min.js 。这是three.js最终被引用的文件。一个已经压缩，一个没有压缩的js文件。 Docs目录 是three.js的帮助文档 Editor目录 一个类似3D-max的简单编辑程序，它能创建一些三维物体。 Examples目录 一些Demo Src目录 源代码目录，里面是所有源代码 Test目录 一些测试代码 Utils目录 ：存放一些脚本，python文件的工具目录。例如将3D-Max格式的模型转换为three.js特有的json模型。 .gitignore文件 Git工具的过滤文件 LICENSE文件 版权信息 开发工具:ear_of_rice: 推荐WebStorm 调试工具:cat: 浏览器端调试 Three.js三大组件:joy_cat: 场景 相机 渲染器 代码示例:baby_chick:12345var scene = new THREE.Scene(); // 场景var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);// 透视相机var renderer = new THREE.WebGLRenderer(); // 渲染器renderer.setSize(window.innerWidth, window.innerHeight); // 设置渲染器的大小为窗口的内宽度，也就是内容区的宽度document.body.appendChild(renderer.domElement); 完整示例:100:1234567891011121314151617181920212223242526272829303132&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt; &lt;title&gt;&lt;/title&gt; &lt;style&gt;canvas &#123; width: 100%; height: 100% &#125;&lt;/style&gt; &lt;script src="js/three.js"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;script&gt; var scene = new THREE.Scene(); var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000); var renderer = new THREE.WebGLRenderer(); renderer.setSize(window.innerWidth, window.innerHeight); document.body.appendChild(renderer.domElement); var geometry = new THREE.CubeGeometry(1,1,1); var material = new THREE.MeshBasicMaterial(&#123;color: 0x00ff00&#125;); var cube = new THREE.Mesh(geometry, material); scene.add(cube); camera.position.z = 5; function render() &#123; requestAnimationFrame(render); cube.rotation.x += 0.1; cube.rotation.y += 0.1; renderer.render(scene, camera); &#125; render(); &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <tags>
+        <tag>three.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ContextCapture]]></title>
+    <url>%2F2019%2F07%2F17%2FContextCapture%2F</url>
+    <content type="text"><![CDATA[Smart3D Capture基于影像自动化进行三维模型构建的并行软件系统 建模对象：静态物体 辅助信息：传感器属性、照片位置姿态参数、控制点等等 计算过程：空三、重建阶段的参数设置 输出结果：带有真实纹理的三维格网模型（实景真三维模型） 专业名词 Photogroup 影像组 123由一组具有相同内方位元素的影像构成相机属性参数唯一（焦距、传感器尺寸、畸变等等 Photo（影像） 123照片外方位元素（位置+角元素） Component（影像组件） 1有若干个影像组构成的连续立体像对 Block（区块） 1同一测区的全部影像 影像内部坐标系 1ECEF(Earth Centered Earth Fixed)，标准全球笛卡尔坐标系 软件名词解释 AT(Aerotriangulation) 1空三计算 Point 1Keypoint(关键点)、Tiepoint(连接点)、Control Point(控制点) Reconstruction（重建） Scene（场景） 1虚拟的重建对象 Tile（瓦片） 1构成场景的若干个大小相同的数据切块 重建坐标系 1ENU，一般是基于场景中心的地球切平面 Smart3D的软件组成 Master(主控台)Setting(设置) 12setting: 一个中间媒介，它主要是帮助Engine指向任务的路径master: 一个非常好的人机交互界面，相当于一个管理者，它创建任务、管理任务、监视任务的精度等。 Engine(引擎) 1只负责对所指向的Job Queue中任务进行处理，可以独立鱼Master打开或者关闭 Viewer(浏览) 1可预览生成的三维场景和模型 Samrt3D主控台 导入数据集 定义处理过程设置 提交作业任务 监控作业任务进度 浏览处理结果。 主控台工作流 工程 (Project) 1一个工程管理者所有与它对应场景相关的处理数据，工程包含一个或多个区块作为子项 区块(Block) 1一个区块管理者一系列用于一个或多个三维重建的输入图像与其属性信息，这些信息包括传感器尺寸、焦距、主点、透镜畸变以及位置与旋转等姿态信息。 重建(Reconstructioin) 1一个重建管理用于启动一个或多个场景制作的三维重建框架 生产(Production) 1一个生产管理三维模型的生成，还包括错误反馈、进度报告、模型导入等功能。]]></content>
+      <categories>
+        <category>倾斜摄影</category>
+      </categories>
+      <tags>
+        <tag>smart3D</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[倾斜摄影]]></title>
+    <url>%2F2019%2F07%2F17%2F%E5%80%BE%E6%96%9C%E6%91%84%E5%BD%B1%2F</url>
+    <content type="text"><![CDATA[倾斜摄影介绍倾斜摄影测量技术是国际测绘遥感领域近年发展起来的一项高新技术，利用照片进行三维重建成为一项关键性的技术。 数据处理的流程 数据采集获取 数据预处理，POS解算整理、影像检查、影像调整 内业数据生产，相对定向 外业数据生产，绝对定向 内业数据生产，空中三角测量（AT）、3d模型重建、3d产品提交 倾斜摄影模型实现单体化的技术思路 最直观的思路，就是用建筑物、道路、树木等对应的矢量面，对倾斜摄影模型进行切割，即把连续的三角面片网从物理上分割开，从而实现单体化。我们可以称之为“切割单体化”。 利用模型的三角面片中每个顶点额外的存储空间，把对应的矢量面的ID值存储起来；即一个建筑所对应的三角面片的所有顶点，都存储了同一个ID值，从而实现在鼠标选中这个建筑时，该建筑可以呈现出高亮的效果。这个可以称之为“ID单体化”。其实就是让同一个建筑模型上，都存储上同一个id值。从而在三维gis中呈现出鼠标点击后，能高亮显示这个建筑物 这样的单体化全部是基于倾斜模型的自动化进行，由于这样的单体化都事先需要准备好地物所对应的矢量底面，因此在数据的准备工作上并没有差别。不同的是：切割单体化是用完矢量面之后就可以扔了；ID单体化需要留着矢量面做属性查询；这样的单体化是进行的单个模型的提取。 数据质量精度评判标准倾斜摄影测量技术能够提供三维点云、三维模型、真正射影像( TDOM) 、数字表面模型( DSM) 等多种成果形式，其中三维模型具备真实、细致、具体的特点，通常称为真三维模型。我们可以将这种实景三维模型当做一种新的基础地理数据来进行精度评定，包括位置精度、几何精度和纹理精度3 个方面。 位置精度，三维模型的位置精度评定跟空三的物方精度评定有类似之处，通过比对加密点和检查点的精度进行衡量。在控制点周边比较平坦的区域，精度比对容易进行; 在房角、墙线、陡坎等几何特征变化大的地方，模型上的采点误差比较大，精度衡量可靠性降低，可以联合影像作业，得到最终的成果矢量或模型数据再进行比对。 几何精度，传统手工建模可以自由设计地物的几何形状，而真三维建模，影像重叠度越大的地方纹理越全，三维的几何特征就越完整。反之，影像重叠不够可能出现破面、漏面、悬空、拉花等情况，影响地物几何信息的完整表达。这种属于原理性问题，无法完全避免，可以按照下面的方法进行评定。在三维模型浏览软件中参照航拍角度固定浏览视角，同时拉伸到分辨率相符的高度去查看模型，看不出明显变形、拉花即可判定为合格，反之为不合格。 纹理精度，倾斜三维建模完全依靠计算机来自动匹配地物的纹理信息，由于原始影像质量不同，导致匹配结果可能存在色彩不一致、明暗度不一致、纹理不清晰等情况。要提高纹理精度就必须提高参加匹配的影像质量，剔除存在云雾遮挡覆盖、镜头反光、地物阴影、大面积相似纹理、分辨率变化异常等问题像片，提高匹配计算的准确度。]]></content>
+      <categories>
+        <category>倾斜摄影</category>
+      </categories>
+      <tags>
+        <tag>倾斜摄影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git速学]]></title>
     <url>%2F2019%2F07%2F07%2Fgit%E9%80%9F%E5%AD%A6%2F</url>
     <content type="text"><![CDATA[git基本命令 初始化仓库 初始当前文件夹 git init 指定文件夹初始化 git init FolderName 添加新文件 添加全部文件 git add . 添加指定文件 git add FileName 提交版本 提交到仓库 git commit -m &quot;注释信息&quot; 同时添加和add git commit -a -m &quot;注释信息&quot; 发布版本 克隆并发布 git clone ssh: example.url.git 发布版本 git push ssh: example.url.git 删除文件 git rm file 创建分支 git branch test 切换分支 git checkout test 删除分支 git branch -d test 合并分支 git merge test]]></content>
