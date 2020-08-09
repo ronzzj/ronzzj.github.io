@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ronzzj.github.io/"/>
-  <updated>2019-07-17T06:37:56.150Z</updated>
+  <updated>2020-08-09T06:15:17.704Z</updated>
   <id>https://ronzzj.github.io/</id>
   
   <author>
@@ -17,28 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>threejs</title>
-    <link href="https://ronzzj.github.io/2019/07/17/threejs/"/>
-    <id>https://ronzzj.github.io/2019/07/17/threejs/</id>
-    <published>2019-07-17T06:25:20.000Z</published>
-    <updated>2019-07-17T06:37:56.150Z</updated>
+    <title>hexo指令</title>
+    <link href="https://ronzzj.github.io/2020/08/09/hexo%E6%8C%87%E4%BB%A4/"/>
+    <id>https://ronzzj.github.io/2020/08/09/hexo指令/</id>
+    <published>2020-08-09T06:14:32.000Z</published>
+    <updated>2020-08-09T06:15:17.704Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Three-js-第一篇"><a href="#Three-js-第一篇" class="headerlink" title="Three.js 第一篇"></a>Three.js 第一篇</h2><h3 id="Three-js"><a href="#Three-js" class="headerlink" title="Three.js"></a>Three.js</h3><ul><li>Three.js 是基于WebGL开发的。</li><li>Three.js 是基于web端的3d游戏引擎</li><li>Three 是指 3D(三维)</li><li>Js是指JavaScript</li></ul><h3 id="Three-js目录结构"><a href="#Three-js目录结构" class="headerlink" title="Three.js目录结构"></a>Three.js目录结构</h3><ul><li><h4 id="Build目录"><a href="#Build目录" class="headerlink" title="Build目录"></a>Build目录</h4><ul><li>包含两个文件，three.js 和three.min.js 。这是three.js最终被引用的文件。一个已经压缩，一个没有压缩的js文件。</li></ul></li><li><h4 id="Docs目录"><a href="#Docs目录" class="headerlink" title="Docs目录"></a>Docs目录</h4><ul><li>是three.js的帮助文档</li></ul></li><li><h4 id="Editor目录"><a href="#Editor目录" class="headerlink" title="Editor目录"></a>Editor目录</h4><ul><li>一个类似3D-max的简单编辑程序，它能创建一些三维物体。</li></ul></li><li><h4 id="Examples目录"><a href="#Examples目录" class="headerlink" title="Examples目录"></a>Examples目录</h4><ul><li>一些Demo</li></ul></li><li><h4 id="Src目录"><a href="#Src目录" class="headerlink" title="Src目录"></a>Src目录</h4><ul><li>源代码目录，里面是所有源代码</li></ul></li><li><h4 id="Test目录"><a href="#Test目录" class="headerlink" title="Test目录"></a>Test目录</h4><ul><li>一些测试代码</li></ul></li><li><h4 id="Utils目录"><a href="#Utils目录" class="headerlink" title="Utils目录"></a>Utils目录</h4><ul><li>：存放一些脚本，python文件的工具目录。例如将3D-Max格式的模型转换为three.js特有的json模型。</li></ul></li><li><h4 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title=".gitignore文件"></a>.gitignore文件</h4><ul><li>Git工具的过滤文件</li></ul></li><li><h4 id="LICENSE文件"><a href="#LICENSE文件" class="headerlink" title="LICENSE文件"></a>LICENSE文件</h4><ul><li>版权信息</li></ul></li></ul><h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><ul><li>推荐WebStorm</li></ul><h3 id="调试工具"><a href="#调试工具" class="headerlink" title="调试工具"></a>调试工具</h3><ul><li>浏览器端调试</li></ul><h3 id="Three-js三大组件"><a href="#Three-js三大组件" class="headerlink" title="Three.js三大组件"></a>Three.js三大组件</h3><ul><li><h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4></li><li><h4 id="相机"><a href="#相机" class="headerlink" title="相机"></a>相机</h4></li><li><h4 id="渲染器"><a href="#渲染器" class="headerlink" title="渲染器"></a>渲染器</h4></li></ul><h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scene = <span class="keyword">new</span> THREE.Scene();<span class="comment">// 场景</span></span><br><span class="line"><span class="keyword">var</span> camera = <span class="keyword">new</span> THREE.PerspectiveCamera(<span class="number">75</span>, <span class="built_in">window</span>.innerWidth/<span class="built_in">window</span>.innerHeight, <span class="number">0.1</span>, <span class="number">1000</span>);<span class="comment">// 透视相机</span></span><br><span class="line"><span class="keyword">var</span> renderer = <span class="keyword">new</span> THREE.WebGLRenderer();<span class="comment">// 渲染器</span></span><br><span class="line">renderer.setSize(<span class="built_in">window</span>.innerWidth, <span class="built_in">window</span>.innerHeight);<span class="comment">// 设置渲染器的大小为窗口的内宽度，也就是内容区的宽度</span></span><br><span class="line"><span class="built_in">document</span>.body.appendChild(renderer.domElement);</span><br></pre></td></tr></table></figure><h3 id="完整示例"><a href="#完整示例" class="headerlink" title="完整示例"></a>完整示例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span>canvas &#123; width: 100%; height: 100% &#125;<span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/three.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> scene = <span class="keyword">new</span> THREE.Scene();</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> camera = <span class="keyword">new</span> THREE.PerspectiveCamera(<span class="number">75</span>, <span class="built_in">window</span>.innerWidth/<span class="built_in">window</span>.innerHeight, <span class="number">0.1</span>, <span class="number">1000</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> renderer = <span class="keyword">new</span> THREE.WebGLRenderer();</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">        renderer.setSize(<span class="built_in">window</span>.innerWidth, <span class="built_in">window</span>.innerHeight);</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="built_in">document</span>.body.appendChild(renderer.domElement);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> geometry = <span class="keyword">new</span> THREE.CubeGeometry(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> material = <span class="keyword">new</span> THREE.MeshBasicMaterial(&#123;<span class="attr">color</span>: <span class="number">0x00ff00</span>&#125;);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> cube = <span class="keyword">new</span> THREE.Mesh(geometry, material); scene.add(cube);</span></span><br><span class="line">        camera.position.z = 5;</span><br><span class="line"><span class="javascript">        <span class="function"><span class="keyword">function</span> <span class="title">render</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line">            requestAnimationFrame(render);</span><br><span class="line">            cube.rotation.x += 0.1;</span><br><span class="line">            cube.rotation.y += 0.1;</span><br><span class="line">            renderer.render(scene, camera);</span><br><span class="line">        &#125;</span><br><span class="line">        render();</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hexo-博客"><a href="#Hexo-博客" class="headerlink" title="Hexo 博客"></a><strong>Hexo 博客</strong></h1><h5 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a><strong>Hexo 简介</strong></h5><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><h5 id="Hexo-环境配置"><a href="#Hexo-环境配置" class="headerlink" title="Hexo 环境配置"></a><strong>Hexo 环境配置</strong></h5><ul><li><p>Node.js（8.10以上）</p></li><li><p>git</p></li></ul><h5 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a><strong>Hexo安装</strong></h5><ul><li><p>全局安装 <code>npm install -g hexo-cli</code></p></li><li><p>局部安装 <code>npm install hexo</code></p></li></ul><h5 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a><strong>Hexo建站</strong></h5><ul><li>新建文件夹</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo init &lt;folder&gt;</span><br><span class="line"><span class="meta">$</span> cd &lt;folder&gt;</span><br><span class="line"><span class="meta">$</span> npm install</span><br></pre></td></tr></table></figure><ul><li>目录结构</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml 网站的配置信息，您可以在此配置大部分的参数。</span><br><span class="line">├── package.json 应用程序的信息。EJS, Stylus 和 Markdown renderer 已默认安装，您可以自由移除。</span><br><span class="line">├── scaffolds 模版文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</span><br><span class="line">├── source 资源文件夹是存放用户资源的地方。</span><br><span class="line">|   ├── _drafts </span><br><span class="line">|   └── _posts 除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。</span><br><span class="line">└── themes 主题文件夹。Hexo 会根据主题来生成静态页面。</span><br></pre></td></tr></table></figure><h5 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a><strong>Hexo配置</strong></h5><p><code>https://hexo.io/zh-cn/docs/configuration</code></p><h5 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a><strong>Hexo命令</strong></h5><p><code>hexo init [folder]</code>  新建项目文件夹，并初始化</p><p><code>hexo new [layout] &lt;title&gt;</code> 新建文章</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-p, --path自定义新文章的路径</span><br><span class="line">-r, --replace如果存在同名文章，将其替换</span><br><span class="line">-s, --slug文章的 Slug，作为新文章的文件名和发布后的 URL</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;Three-js-第一篇&quot;&gt;&lt;a href=&quot;#Three-js-第一篇&quot; class=&quot;headerlink&quot; title=&quot;Three.js 第一篇&quot;&gt;&lt;/a&gt;Three.js 第一篇&lt;/h2&gt;&lt;h3 id=&quot;Three-js&quot;&gt;&lt;a href=&quot;#Three
+        &lt;h1 id=&quot;Hexo-博客&quot;&gt;&lt;a href=&quot;#Hexo-博客&quot; class=&quot;headerlink&quot; title=&quot;Hexo 博客&quot;&gt;&lt;/a&gt;&lt;strong&gt;Hexo 博客&lt;/strong&gt;&lt;/h1&gt;&lt;h5 id=&quot;Hexo-简介&quot;&gt;&lt;a href=&quot;#Hexo-简介&quot; 
       
     
     </summary>
     
     
-      <category term="three.js" scheme="https://ronzzj.github.io/categories/three-js/"/>
-    
-    
-      <category term="three.js" scheme="https://ronzzj.github.io/tags/three-js/"/>
     
   </entry>
   
@@ -47,9 +43,9 @@
     <link href="https://ronzzj.github.io/2019/07/07/git%E9%80%9F%E5%AD%A6/"/>
     <id>https://ronzzj.github.io/2019/07/07/git速学/</id>
     <published>2019-07-07T14:18:51.000Z</published>
-    <updated>2019-07-07T14:21:26.830Z</updated>
+    <updated>2020-08-09T06:12:33.360Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="git基本命令"><a href="#git基本命令" class="headerlink" title="git基本命令"></a>git基本命令</h2><ul><li><p>初始化仓库  </p><ol><li><p>初始当前文件夹  </p><p><code>git init</code>   </p></li><li><p>指定文件夹初始化 </p><p><code>git  init FolderName</code></p></li></ol></li><li><p>添加新文件  </p><ol><li><p>添加全部文件</p><p><code>git add .</code></p></li><li><p>添加指定文件</p><p><code>git add FileName</code></p></li></ol></li><li><p>提交版本</p><ol><li><p>提交到仓库</p><p><code>git commit -m &quot;注释信息&quot;</code> </p></li><li><p>同时添加和add</p><p><code>git commit -a -m &quot;注释信息&quot;</code></p></li></ol></li><li><p>发布版本</p><ol><li><p>克隆并发布</p><p><code>git clone ssh: example.url.git</code></p></li><li><p>发布版本</p><p><code>git push ssh: example.url.git</code></p></li></ol></li><li><p>删除文件</p><p><code>git rm file</code></p></li><li><p>创建分支</p><p><code>git branch test</code></p></li><li><p>切换分支</p><p><code>git checkout test</code></p></li><li><p>删除分支</p><p><code>git branch -d test</code></p></li><li><p>合并分支</p><p><code>git merge test</code></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="git基本命令"><a href="#git基本命令" class="headerlink" title="git基本命令"></a>git基本命令</h2><ul><li><p>初始化仓库  </p><ol><li><p>初始当前文件夹  </p><p><code>git init</code>   </p></li><li><p>指定文件夹初始化 </p><p><code>git  init FolderName</code></p></li></ol></li><li><p>添加新文件  </p><ol><li><p>添加全部文件</p><p><code>git add .</code></p></li><li><p>添加指定文件</p><p><code>git add FileName</code></p></li></ol></li><li><p>提交版本</p><ol><li><p>提交到仓库</p><p><code>git commit -m &quot;注释信息&quot;</code> </p></li><li><p>同时添加和add</p><p><code>git commit -a -m &quot;注释信息&quot;</code></p></li></ol></li><li><p>发布版本</p><ol><li><p>克隆并发布</p><p><code>git clone ssh: example.url.git</code></p></li><li><p>发布版本</p><p><code>git push ssh: example.url.git</code></p></li></ol></li><li><p>删除文件</p><p><code>git rm file</code></p></li><li><p>创建分支</p><p><code>git branch test</code></p></li><li><p>切换分支</p><p><code>git checkout test</code></p></li><li><p>删除分支</p><p><code>git branch -d test</code></p></li><li><p>合并分支</p><p><code>git merge test</code></p></li></ul><ul><li>git init</li><li>git add .</li><li>git commit -m “项目描述”</li><li>git remote add origin <a href="https://github.com/ronzzj/-BirckBracker.git" target="_blank" rel="noopener">https://github.com/ronzzj/-BirckBracker.git</a></li><li>git push origin master</li></ul>]]></content>
     
     <summary type="html">
     
@@ -60,36 +56,6 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;初始当前文件夹  &lt;/p&gt;
 &lt;p&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://ronzzj.github.io/categories/git/"/>
-    
-    
-      <category term="git" scheme="https://ronzzj.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git命令使用</title>
-    <link href="https://ronzzj.github.io/2019/07/06/git/"/>
-    <id>https://ronzzj.github.io/2019/07/06/git/</id>
-    <published>2019-07-06T04:09:40.000Z</published>
-    <updated>2019-07-06T04:14:12.300Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>git init</li><li>git add .</li><li>git commit -m “项目描述”</li><li>git remote add origin <a href="https://github.com/ronzzj/-BirckBracker.git" target="_blank" rel="noopener">https://github.com/ronzzj/-BirckBracker.git</a></li><li>git push origin master</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;git init&lt;/li&gt;
-&lt;li&gt;git add .&lt;/li&gt;
-&lt;li&gt;git commit -m “项目描述”&lt;/li&gt;
-&lt;li&gt;git remote add origin &lt;a href=&quot;https://github.com/ronzzj/-BirckB
       
     
     </summary>
